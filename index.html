@@ -413,9 +413,7 @@
             <!-- =================================================
                  PHOTO
 
-                 Put recipient photo here:
-
-                 recipient.jpg
+                 Keep recipient.jpeg in the same folder as this page.
             ================================================== -->
 
             <div
@@ -429,8 +427,11 @@
                 <div class="photo-frame">
 
                     <img
-                        src="recipient.jpeg"
+                        src="./recipient.jpeg"
                         alt="Birthday recipient"
+                        loading="eager"
+                        decoding="async"
+                        onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/shouryajaiswal268-cmyk/birth/main/recipient.jpeg';"
                     >
 
                 </div>
